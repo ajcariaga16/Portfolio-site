@@ -1,0 +1,19 @@
+.nav-list {
+  right: 0px;
+  display: flex;
+  width: 300px;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #000000;
+  flex-basis: 15%;
+}
+
+.active, .nav-item:hover {
+  text-decoration: none;
+  color: #4e7abf;
+}

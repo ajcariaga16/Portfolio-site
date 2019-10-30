@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import './navbar.css'
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props)
@@ -25,18 +27,22 @@ class Navbar extends React.Component {
       ]
     }
   }
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link>
-        </li>
-        <li><Link to="./about">About</Link>
-        </li>
-        <li><Link to="./skills">Skills</Link>
-        </li>
-        <li><Link to="./projects">Projects</Link>
-        </li>
-      </ul>
-    </div>
+  render() {
+    return (
+      <div>
+        <ul className="nav-list">
+        {this.state.items.map((item) => {
+          return (
+            <li>
+              <Link to={item.link} className="nav-item">
+                {item.name}
+              </Link>
+            </li>
+          )
+        })}
+        </ul>
+      </div>
+    )
   }
 }
 
