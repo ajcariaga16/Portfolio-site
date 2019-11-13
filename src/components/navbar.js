@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import './navbar.css'
+import './styles.css'
 
 class Navbar extends React.Component {
   constructor(props) {

@@ -1,20 +1,20 @@
 import React from 'react'
 
-import footerStyles from './footer.css'
+import './styles.css'
 
 const Footer = () => {
   return (
     <footer>
       <div style={{ textAlign: 'center'}}>
       <hr style={{ margin: '0 25%'}} />
-        <p className={footerStyles.foottext}>Built from scratch with
-          <a className={footerStyles.footer}
+        <p class="footer-text">Built from scratch with
+          <a id="footer-link"
           href="https://reactjs.org/"> React</a>
-          <a className={footerStyles.footer}
+          <a id="footer-link"
           href="https://www.w3.org/standards/webdesign/htmlcss/"> HTML5</a>
-          <a className={footerStyles.footer}
+          <a id="footer-link"
           href="https://graphql.org/"> GraphQL</a> and
-          <a className={footerStyles.footer}
+          <a id="footer-link"
           href="https://www.gatsbyjs.org/"> GatsbyJS</a>
         </p>
       </div>
