@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import './styles.css'
+import '../css/navbar.css'
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -29,19 +29,19 @@ class Navbar extends React.Component {
   }
   render() {
     return (
-      <div>
-        <ul className="nav-list">
+      <nav className="navbar">
+        <ul>
         {this.state.items.map((item) => {
           return (
             <li>
-              <Link to={item.link} className="nav-item">
+              <Link to={item.link} className="link">
                 {item.name}
               </Link>
             </li>
           )
         })}
         </ul>
-      </div>
+      </nav>
     )
   }
 }

@@ -1,15 +1,13 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import './styles.css'
+import '../css/header.css'
 
 const Header = ({ siteTitle }) => (
-  <header className="header">
-    <div className='header-back'>
-      <h1 className='header-name'>
-          AJ Cariaga
-      </h1>
-    </div>
+  <header>
+    <h1>
+      AJ Cariaga
+    </h1>
   </header>
 )
 
